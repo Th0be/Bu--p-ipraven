@@ -1,119 +1,177 @@
 <!DOCTYPE html>
 <html lang="cs">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description"
-        content="Buď připaven. Tvoř jednoduše kvalitní a prestižní proram na schůzky tak jednoduše, jak to jen jde.">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" href="img/icon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/sifrovani.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Buď připaven. Tvoř jednoduše kvalitní a prestižní proram na schůzky tak jednoduše, jak to jen jde."
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="img/icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/sifrovani.css" />
     <title>Šifrování</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2CCLKV0N9"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6T4XDEJMRC"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-H2CCLKV0N9');
+      gtag("config", "G-6T4XDEJMRC");
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div id="panel">
-            <div id="logo">
-                <a href="index.html"><img id="logoImage" src="img/logo.png" alt="Logo webu"></a>
-            </div>
-            <div id="menuMobile">
-                <img id="menuMobileImage" src="img/hamburger.png" alt="Menu">
-            </div>
-            <div id="menu">
-                <ul>
-                    <li><a href="index.html">Domů</a></li>
-                    <li>Šifrování</li>
-                </ul>
-            </div>
+      <div id="panel">
+        <div id="logo">
+          <a href="index.html"
+            ><img id="logoImage" src="img/logo.png" alt="Logo webu"
+          /></a>
         </div>
+        <div id="menuMobile">
+          <img id="menuMobileImage" src="img/hamburger.png" alt="Menu" />
+        </div>
+        <div id="menu">
+          <ul>
+            <li><a href="index.html">Domů</a></li>
+            <li>Šifrování</li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
-        <div class="cipherFirstPart">
-            <div class="cipherBox">
-                <textarea type="text" id="cipherInput" placeholder="Zde zadej text, jenž chceš zašifrovat"></textarea>
-            </div>
-            <div class="cipherBox">
-            <div id="cipherOutput">Zde nalezneš tvůj text zašifrovaný</div>
-            </div>
+      <div class="cipherFirstPart">
+        <div class="cipherBox">
+          <textarea
+            type="text"
+            id="cipherInput"
+            placeholder="Zde zadej text, jenž chceš zašifrovat"
+          ></textarea>
         </div>
-        <div class="cipherSecondPart">
-            <div id="typeOfEncryptionBox" class="typeOfBox">
-                <select id="typeOfEncryption" class="typeOf">
-                    <option value="encryption">Šifrování</option>
-                    <option value="decryption">Dešifrování</option>
-                </select>
-            </div>
-            <div class="numberOf">
-                Počet znaků:
-                <div id="numberOfCharacters">0</div>
-            </div>
-            <div class="numberOf" id="numberOfWordsBox">
-                Počet slov:
-                <div id="numberOfWords">0</div>
-            </div>
-            <div id="typeOfCipherBox" class="typeOfBox">
-                <select id="typeOfCipher" class="typeOf">
-                    <!--<option value="automatic" id="automatic">Automaticky</option>-->
-                    <option value="phoneCipher" selected="selected">Mobilová šifra</option>
-                    <option value="reverseCipher">Návratová šifra</option>
-                    <option value="reverseAlphabetCipher">Obrácená abeceda</option>
-                    <option value="morseCode">Morseova abeceda</option>
-                    <option value="ceasarCipher">Ceasarova šifra</option>
-                    <option value="tobsCipher">Tobova šifra</option>
-                </select>
-            </div>
-            <div id="encryption">Zašifrovat</div>
-            <div id="copyCipherInput">Kopírovat nezašifrované</div>
-            <div id="copyCipherOutput">Kopírovat zašifrované</div>
-            <div id="morseCodeBox">
-                <div class="morseCodeCharacters">
-                    První znak:
-                    <input type="text" id="morseCodeFirstSign" class="cipherInput" placeholder=".">
-                </div>
-                <div class="morseCodeCharacters">
-                    Druhý znak:
-                    <input type="text" id="morseCodeSecondSign" class="cipherInput" placeholder="-">
-                </div>
-                <div class="morseCodeCharacters">
-                    Třetí znak:
-                    <input type="text" id="morseCodeThirdSign" class="cipherInput" placeholder="/">
-                </div>
-            </div>
-            <div id="ceasarCipherBox">
-                Posun o:
-                <input type="number" min="-26" max="26" id="ceasarIndex" class="cipherInput" placeholder="0" oninput="numbersOnly(-26,26,'ceasarIndex')">
-            </div>
-            <div id="tobsCipherBox">
-                <div class="tobsCipherNumbers">
-                    Minimální číslo:
-                    <input type="number" min="0" max="9" id="tobsMin" class="cipherInput" placeholder="0" oninput="numbersOnly(0,9,'tobsMin')">
-                </div>
-                <div class="tobsCipherNumbers">
-                    Maximální číslo:
-                    <input type="number" min="0" max="9" id="tobsMax" class="cipherInput" placeholder="9" oninput="numbersOnly(0,9,'tobsMax')">
-                </div>
-            </div>
+        <div class="cipherBox">
+          <div id="cipherOutput">Zde nalezneš tvůj text zašifrovaný</div>
         </div>
-        <div id="cipherAboutInformation">
-            <h1>Mobilová šifra</h1>
-            <p class="cipherDifficulty">Středně těžké</p>
-            <p class="cipherEncryptedCharacters">Šifrují se pouze písmena a česká diakritika</p>
-            <p>Princip je založen na tom, že každé písmeno má podle vzoru mobilní klávesnice své unikátní číslo. Čísla jsou složeny z jedné až čtyř stejných cifer a oddělují se mezerou.</p>
+      </div>
+      <div class="cipherSecondPart">
+        <div id="typeOfEncryptionBox" class="typeOfBox">
+          <select id="typeOfEncryption" class="typeOf">
+            <option value="encryption">Šifrování</option>
+            <option value="decryption">Dešifrování</option>
+          </select>
         </div>
+        <div class="numberOf">
+          Počet znaků:
+          <div id="numberOfCharacters">0</div>
+        </div>
+        <div class="numberOf" id="numberOfWordsBox">
+          Počet slov:
+          <div id="numberOfWords">0</div>
+        </div>
+        <div id="typeOfCipherBox" class="typeOfBox">
+          <select id="typeOfCipher" class="typeOf">
+            <!--<option value="automatic" id="automatic">Automaticky</option>-->
+            <option value="phoneCipher" selected="selected">
+              Mobilová šifra
+            </option>
+            <option value="reverseCipher">Návratová šifra</option>
+            <option value="reverseAlphabetCipher">Obrácená abeceda</option>
+            <option value="morseCode">Morseova abeceda</option>
+            <option value="ceasarCipher">Ceasarova šifra</option>
+            <option value="tobsCipher">Tobova šifra</option>
+          </select>
+        </div>
+        <div id="encryption">Zašifrovat</div>
+        <div id="copyCipherInput">Kopírovat nezašifrované</div>
+        <div id="copyCipherOutput">Kopírovat zašifrované</div>
+        <div id="morseCodeBox">
+          <div class="morseCodeCharacters">
+            První znak:
+            <input
+              type="text"
+              id="morseCodeFirstSign"
+              class="cipherInput"
+              placeholder="."
+            />
+          </div>
+          <div class="morseCodeCharacters">
+            Druhý znak:
+            <input
+              type="text"
+              id="morseCodeSecondSign"
+              class="cipherInput"
+              placeholder="-"
+            />
+          </div>
+          <div class="morseCodeCharacters">
+            Třetí znak:
+            <input
+              type="text"
+              id="morseCodeThirdSign"
+              class="cipherInput"
+              placeholder="/"
+            />
+          </div>
+        </div>
+        <div id="ceasarCipherBox">
+          Posun o:
+          <input
+            type="number"
+            min="-26"
+            max="26"
+            id="ceasarIndex"
+            class="cipherInput"
+            placeholder="0"
+            oninput="numbersOnly(-26,26,'ceasarIndex')"
+          />
+        </div>
+        <div id="tobsCipherBox">
+          <div class="tobsCipherNumbers">
+            Minimální číslo:
+            <input
+              type="number"
+              min="0"
+              max="9"
+              id="tobsMin"
+              class="cipherInput"
+              placeholder="0"
+              oninput="numbersOnly(0,9,'tobsMin')"
+            />
+          </div>
+          <div class="tobsCipherNumbers">
+            Maximální číslo:
+            <input
+              type="number"
+              min="0"
+              max="9"
+              id="tobsMax"
+              class="cipherInput"
+              placeholder="9"
+              oninput="numbersOnly(0,9,'tobsMax')"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="cipherAboutInformation">
+        <h1>Mobilová šifra</h1>
+        <p class="cipherDifficulty">Středně těžké</p>
+        <p class="cipherEncryptedCharacters">
+          Šifrují se pouze písmena a česká diakritika
+        </p>
+        <p>
+          Princip je založen na tom, že každé písmeno má podle vzoru mobilní
+          klávesnice své unikátní číslo. Čísla jsou složeny z jedné až čtyř
+          stejných cifer a oddělují se mezerou.
+        </p>
+      </div>
     </main>
     <script src="js/script.js"></script>
     <script src="js/sifrovani.js"></script>
-</body>
-
+  </body>
 </html>

@@ -26,7 +26,7 @@ header {
 }
 /*
 HEADLINES*****************************************************************************************************************************************/
-h1{
+h1 {
   font-size: 48px;
   font-family: "skautbold";
 }
@@ -49,13 +49,13 @@ h1{
   margin: 8px auto;
 }
 /*MOBILE MENU*************************************************************************************************************************************/
-#menuMobile{
+#menuMobile {
   height: 80px;
   width: 80px;
   float: right;
   display: none;
 }
-#menuMobileImage{
+#menuMobileImage {
   height: 60px;
   width: 60px;
   margin: 10px;
@@ -76,7 +76,7 @@ h1{
   font-family: "skautbold";
   font-size: 25px;
 }
-#menu > ul > li > a{
+#menu > ul > li > a {
   font-family: "skautbold";
   font-size: 25px;
 }
@@ -94,7 +94,7 @@ h1{
 }
 /*QUERIES*****************************************************************************************************************************************/
 @media only screen and (max-width: 1200px) {
-  *{
+  * {
     font-size: 18px;
   }
   h1 {
@@ -102,7 +102,7 @@ h1{
   }
 }
 @media only screen and (max-width: 850px) {
-  #logo{
+  #logo {
     margin-left: 10px;
   }
   #user {
@@ -123,7 +123,7 @@ h1{
     float: none;
     margin: 25px auto;
   }
-  #menuMobile{
+  #menuMobile {
     display: block;
     transform: rotate(0deg);
   }
@@ -136,7 +136,7 @@ a:visited {
 }
 a:active,
 a:hover {
-  color: #6B96CA;
+  color: #6b96ca;
 }
 /*SCOUT FONTS*************************************************************************************************************************************/
 @font-face {

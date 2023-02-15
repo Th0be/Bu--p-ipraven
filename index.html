@@ -1,64 +1,75 @@
 <!DOCTYPE html>
 <html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Buď připaven. Tvoř jednoduše kvalitní a prestižní proram na schůzky tak jednoduše, jak to jen jde."
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="img/icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Buď připraven</title>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6T4XDEJMRC"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="description"
-    content="Buď připaven. Tvoř jednoduše kvalitní a prestižní proram na schůzky tak jednoduše, jak to jen jde.">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="icon" href="img/icon.png">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/index.css">
-  <title>Buď připraven</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2CCLKV0N9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      gtag("config", "G-6T4XDEJMRC");
+    </script>
+  </head>
 
-    gtag('config', 'G-H2CCLKV0N9');
-  </script>
-</head>
-
-<body>
-  <header>
-    <div id="panel">
-      <div id="logo">
-        <a href="index.html"><img id="logoImage" src="img/logo.png" alt="Logo webu"></a>
+  <body>
+    <header>
+      <div id="panel">
+        <div id="logo">
+          <a href="index.html"
+            ><img id="logoImage" src="img/logo.png" alt="Logo webu"
+          /></a>
+        </div>
+        <div id="menuMobile">
+          <img id="menuMobileImage" src="img/hamburger.png" alt="Menu" />
+        </div>
+        <div id="menu">
+          <ul>
+            <li>Domů</li>
+            <li><a href="sifrovani.html">Šifrování</a></li>
+          </ul>
+        </div>
       </div>
-      <div id="menuMobile">
-        <img id="menuMobileImage" src="img/hamburger.png" alt="Menu">
-      </div>
-      <div id="menu">
+    </header>
+    <main>
+      <div id="news">
+        <h1>Novinky</h1>
+        <p>19.11.2021</p>
         <ul>
-          <li>Domů</li>
-          <li><a href="sifrovani.html">Šifrování</a></li>
+          <li>+ Responzivita</li>
+          <li>! Opraveny chyby</li>
         </ul>
       </div>
-    </div>
-  </header>
-  <main>
-    <div id="news">
-      <h1>Novinky</h1>
-      <p>19.11.2021</p>
-      <ul>
-        <li>+ Responzivita</li>
-        <li>! Opraveny chyby</li>
-      </ul>
-    </div>
-    <div id="scoutLogo">
-      <img id="scoutLogoImage" src="img/scout-logo.png" alt="Logo Junáka">
-    </div>
-    <div id="aboutProject">
-      <h1>O projektu</h1>
-      <p>Tento projekt vznikl, aby pomohl jednoduše tvořit kvalitní a prestižní program ve všech chvílích a situacích.
-        Prozatím je jeho prioritou zaměřeí na šifrování a dešifrování textů, v budoucnu jsou však plánovány další
-        prvky. Projekt je tvořen Tobem z Klimkovic. Kdybys měl jakkékoliv nápady na zlepšení, napiš mi mail na
-        tobias.navrat@skaut.cz.<br>Nechť tě provází síla mistře.</p>
-    </div>
-  </main>
-  <script src="js/script.js"></script>
-</body>
-
+      <div id="scoutLogo">
+        <img id="scoutLogoImage" src="img/scout-logo.png" alt="Logo Junáka" />
+      </div>
+      <div id="aboutProject">
+        <h1>O projektu</h1>
+        <p>
+          Tento projekt vznikl, aby pomohl jednoduše tvořit kvalitní a prestižní
+          program ve všech chvílích a situacích. Prozatím je jeho prioritou
+          zaměřeí na šifrování a dešifrování textů, v budoucnu jsou však
+          plánovány další prvky. Projekt je tvořen Tobem z Klimkovic. Kdybys měl
+          jakkékoliv nápady na zlepšení, napiš mi mail na
+          tobias.navrat@skaut.cz.<br />Nechť tě provází síla mistře.
+        </p>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
 </html>

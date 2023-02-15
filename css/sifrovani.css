@@ -33,11 +33,11 @@ main {
   transition: margin 0s;
   font-size: 21px;
 }
-#cipherInput:placeholder-shown{
+#cipherInput:placeholder-shown {
   padding-top: 100px;
   font-size: 16px;
 }
-::placeholder{
+::placeholder {
   color: #0d446e;
   user-select: none;
 }
@@ -65,16 +65,16 @@ main {
   background-image: url("../img/first-shape.svg");
 }
 /*VŠECHNY ELEMENTY V OBALU*/
-.cipherSecondPart > *{
+.cipherSecondPart > * {
   color: #0d446e;
   font-family: "skautbold";
 }
 /*VŠECHNY DIVY V OBALU*/
-.cipherSecondPart > div{
+.cipherSecondPart > div {
   display: block;
 }
 /*VŠECHNY INPUTY*/
-.cipherInput{
+.cipherInput {
   height: auto;
   width: 100px;
   margin: 0 auto;
@@ -86,7 +86,7 @@ main {
   transition: 0;
 }
 /*AUTOMATICKÉ DEŠIFROVÁNÍ*/
-#automatic{
+#automatic {
   display: none;
 }
 /*POČTY SLOV A ZNAKŮ*/
@@ -109,15 +109,15 @@ main {
 /*TYP ŠIFRY A ŠIFROVÁNÍ*/
 .typeOfBox {
   height: 50px;
-  margin: 20px auto; 
+  margin: 20px auto;
   padding-top: 12px;
   background-image: url("../img/first-blue-shape.svg");
-  text-align: center;  
+  text-align: center;
 }
-#typeOfCipherBox{
+#typeOfCipherBox {
   width: 300px;
 }
-#typeOfEncryptionBox{
+#typeOfEncryptionBox {
   width: 230px;
 }
 .typeOf {
@@ -132,10 +132,10 @@ main {
   color: #0d446e;
   user-select: none;
 }
-#typeOfCipher{
+#typeOfCipher {
   width: 220px;
 }
-#typeOfEncryption{
+#typeOfEncryption {
   width: 150px;
 }
 .typeOf > option {
@@ -169,7 +169,7 @@ main {
 /*TLAČÍTKA PŘI AKTIVACI*/
 #copyCipherInput:active,
 #copyCipherOutput:active,
-#encryption:active{
+#encryption:active {
   color: white;
   background-image: url("../img/third-blue-shape.svg") !important;
 }
@@ -191,7 +191,7 @@ main {
   clear: both;
 }
 /*CEASAROVA ŠIFRA*/
-#ceasarCipherBox{
+#ceasarCipherBox {
   height: auto;
   width: 200px;
   margin: 5px auto;
@@ -201,13 +201,13 @@ main {
   font-size: 14px;
 }
 /*MORSEOVA ABECEDA*/
-#morseCodeBox{
+#morseCodeBox {
   height: auto;
   width: 200px;
   margin: 0 auto;
   clear: both;
 }
-.morseCodeCharacters{
+.morseCodeCharacters {
   height: auto;
   width: 200px;
   background-image: url("../img/first-blue-shape.svg");
@@ -232,11 +232,11 @@ main {
   padding: 40px 60px 60px 60px;
   background-image: url("../img/first-shape.svg");
 }
-.cipherDifficulty{
+.cipherDifficulty {
   font-size: 18px;
   font-family: skautbold;
 }
-.cipherEncryptedCharacters{
+.cipherEncryptedCharacters {
   font-size: 18px;
   font-style: italic;
 }
@@ -246,10 +246,10 @@ main {
 #copyCipherOutput:hover {
   background-image: url("../img/second-blue-shape.svg");
   color: white;
-  cursor: pointer;;
+  cursor: pointer;
 }
 /*NEZAŠIFROVANÉ ZNAKY*/
-.differentLetter{
+.differentLetter {
   color: #bdd4df;
 }
 @media only screen and (max-width: 1200px) {
@@ -271,7 +271,7 @@ main {
     height: 215px;
     width: 200px;
   }
-  #cipherInput:placeholder-shown{
+  #cipherInput:placeholder-shown {
     padding-top: 90px;
   }
   #cipherOutput {
