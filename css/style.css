@@ -1,0 +1,209 @@
+/*DEFAULT SETTINGS********************************************************************************************************************************/
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "themix";
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-size: 21px;
+  transition: margin 1s;
+}
+body {
+  background-color: #6b96ca;
+}
+/*HEADER******************************************************************************************************************************************/
+header {
+  height: 80px;
+  width: 100%;
+  background-color: #20649b;
+  position: fixed;
+}
+/*
+HEADLINES*****************************************************************************************************************************************/
+h1{
+  font-size: 48px;
+  font-family: "skautbold";
+}
+/*PANEL*******************************************************************************************************************************************/
+#panel {
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+/*LOGO********************************************************************************************************************************************/
+#logo {
+  height: 60px;
+  width: 150px;
+  float: left;
+  margin-left: 60px;
+}
+#logoImage {
+  height: 63px; /*9x24*/
+  width: 168px;
+  margin: 8px auto;
+}
+/*MOBILE MENU*************************************************************************************************************************************/
+#menuMobile{
+  height: 80px;
+  width: 80px;
+  float: right;
+  display: none;
+}
+#menuMobileImage{
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+}
+/*MENU********************************************************************************************************************************************/
+#menu {
+  height: 80px;
+  width: auto;
+  margin-right: 100px;
+  float: right;
+}
+#menu > ul {
+  list-style-type: none;
+}
+#menu > ul > li {
+  float: left;
+  margin: 25px 10px;
+  font-family: "skautbold";
+  font-size: 25px;
+}
+#menu > ul > li > a{
+  font-family: "skautbold";
+  font-size: 25px;
+}
+/*USER********************************************************************************************************************************************/
+#user {
+  height: 80px;
+  width: 80px;
+  float: right;
+  margin-right: 60px;
+}
+#userImage {
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+}
+/*QUERIES*****************************************************************************************************************************************/
+@media only screen and (max-width: 1200px) {
+  *{
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  #logo{
+    margin-left: 10px;
+  }
+  #user {
+    margin-right: 10px;
+  }
+  #menu {
+    height: auto;
+    width: 100%;
+    float: none;
+    margin: 80px 0 0 0;
+    padding: 0;
+    position: absolute;
+    background-color: #20649b;
+    border-bottom: 2px solid white;
+    display: none;
+  }
+  #menu > ul > li {
+    float: none;
+    margin: 25px auto;
+  }
+  #menuMobile{
+    display: block;
+    transform: rotate(0deg);
+  }
+}
+/*LINKS*******************************************************************************************************************************************/
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:active,
+a:hover {
+  color: #6B96CA;
+}
+/*SCOUT FONTS*************************************************************************************************************************************/
+@font-face {
+  font-family: "themix";
+  src: url("https://cdn.skauting.cz/fonts/TheMix_LT_400.eot");
+  src: url("https://cdn.skauting.cz/fonts/TheMix_LT_400.eot? #iefix")
+    format("embedded-opentype");
+  src: url("https://cdn.skauting.cz/fonts/TheMix_LT_400.woff") format("woff"),
+    url("https://cdn.skauting.cz/fonts/TheMix_LT_400.woff2") format("woff2"),
+    url("https://cdn.skauting.cz/fonts/TheMix_LT_400.otf") format("opentype"),
+    url("https://cdn.skauting.cz/fonts/TheMix_LT_400.svg#themix") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "themix";
+  src: url("https://cdn.skauting.cz/fonts/TheMix_LT_400i.eot");
+  src: url("https://cdn.skauting.cz/fonts/TheMix_LT_400i.eot? #iefix")
+    format("embedded-opentype");
+  src: url("https://cdn.skauting.cz/fonts/TheMix_LT_400i.woff") format("woff"),
+    url("https://cdn.skauting.cz/fonts/TheMix_LT_400i.woff2") format("woff2"),
+    url("https://cdn.skauting.cz/fonts/TheMix_LT_400i.otf") format("opentype"),
+    url("https://cdn.skauting.cz/fonts/TheMix_LT_400i.svg#themix") format("svg");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "themix";
+  src: url("https://cdn.skauting.cz/fonts/TheMix_LT_700.eot");
+  src: url("https://cdn.skauting.cz/fonts/TheMix_LT_700.eot? #iefix")
+    format("embedded-opentype");
+  src: url("https://cdn.skauting.cz/fonts/TheMix_LT_700.woff") format("woff"),
+    url("https://cdn.skauting.cz/fonts/TheMix_LT_700.woff2") format("woff2"),
+    url("https://cdn.skauting.cz/fonts/TheMix_LT_700.otf") format("opentype"),
+    url("https://cdn.skauting.cz/fonts/TheMix_LT_700.svg#themix") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "themix";
+  src: url("https://cdn.skauting.cz/fonts/TheMix_LT_700i.eot");
+  src: url("https://cdn.skauting.cz/fonts/TheMix_LT_700i.eot? #iefix")
+    format("embedded-opentype");
+  src: url("https://cdn.skauting.cz/fonts/TheMix_LT_700i.woff") format("woff"),
+    url("https://cdn.skauting.cz/fonts/TheMix_LT_700i.woff2") format("woff2"),
+    url("https://cdn.skauting.cz/fonts/TheMix_LT_700i.otf") format("opentype"),
+    url("https://cdn.skauting.cz/fonts/TheMix_LT_700i.svg#themix") format("svg");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "skautbold";
+  src: url("https://cdn.skauting.cz/fonts/skaut-bold-webfont.eot");
+  src: url("https://cdn.skauting.cz/fonts/skaut-bold-webfont.eot? #iefix")
+    format("embedded-opentype");
+  src: url("https://cdn.skauting.cz/fonts/skaut-bold-webfont.woff")
+      format("woff"),
+    url("https://cdn.skauting.cz/fonts/skaut-bold-webfont.woff2")
+      format("woff2"),
+    url("https://cdn.skauting.cz/fonts/skaut-bold-webfont.otf")
+      format("opentype"),
+    url("https://cdn.skauting.cz/fonts/skaut-bold-webfont.svg#skautbold")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

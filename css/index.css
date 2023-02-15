@@ -1,0 +1,90 @@
+main {
+  height: auto;
+  width: 1200px;
+  margin: 0px auto;
+  padding-top: 80px;
+}
+#news {
+  height: 250px;
+  width: 500px;
+  float: left;
+  padding-top: 55px;
+  margin-top: 50px;
+  margin-left: 50px;
+  background-image: url("../img/first-shape.svg");
+}
+#news > p {
+  font-family: "skautbold";
+  font-size: 18px;
+}
+#news > ul {
+  list-style-type: none;
+}
+#scoutLogo {
+  height: 250px;
+  width: 550px;
+  float: right;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+#scoutLogoImage {
+  height: 242px; /*cca 100x227*/
+  width: 550px;
+  margin-top: 4px;
+}
+#aboutProject {
+  height: 250px;
+  width: 1200px;
+  float: left;
+  margin-top: 25px;
+  padding: 25px 170px;
+  background-image: url("../img/second-shape.svg");
+}
+@media only screen and (max-width: 1200px) {
+  main {
+    height: auto;
+    width: 800px;
+  }
+  #news {
+    height: 169px;
+    width: 333px;
+    margin-left: 33px;
+    padding-top: 30px;
+  }
+  #scoutLogo {
+    height: 167px;
+    width: 367px;
+    margin-right: 33px;
+  }
+  #scoutLogoImage {
+    height: 161px;
+    width: 365px;
+    margin-top: 2px;
+  }
+  #aboutProject {
+    height: 220px;
+    width: 780px;
+    margin-left: 10px;
+    padding: 30px 35px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  main {
+    height: auto;
+    width: 400px;
+    padding: 80px 15px 20px 15px;
+    box-sizing: border-box;
+  }
+  #news,
+  #scoutLogo,
+  #aboutProject {
+    float: none;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  #aboutProject {
+    height: 450px;
+    width: 333px;
+    padding: 60px 30px;
+  }
+}

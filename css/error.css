@@ -1,0 +1,87 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "skautbold";
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: margin 1s;
+}
+body {
+  background-color: #6b96ca;
+}
+h1 {
+  font-size: 68px;
+}
+p,
+a {
+  font-size: 34px;
+}
+#error {
+  height: 450px;
+  width: 1100px;
+  margin: 125px auto;
+  padding: 150px 0;
+  background-image: url("../img/first-shape.svg");
+  background-size: 100% 100%;
+}
+@media only screen and (max-width: 1200px) {
+  #error {
+    height: 300px;
+    width: 725px;
+    margin: 170px auto;
+    padding: 80px 40px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  p,
+  a {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 825px) {
+  #error {
+    height: 500px;
+    width: 360px;
+    margin: 125px auto;
+    padding: 100px 25px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  p,
+  a {
+    font-size: 25px;
+  }
+}
+/*LINKS*******************************************************************************************************************************************/
+a:link,
+a:visited {
+  color: white;
+}
+a:active,
+a:hover {
+  color: #6b96ca;
+}
+/*SCOUT FONTS*************************************************************************************************************************************/
+@font-face {
+  font-family: "skautbold";
+  src: url("https://cdn.skauting.cz/fonts/skaut-bold-webfont.eot");
+  src: url("https://cdn.skauting.cz/fonts/skaut-bold-webfont.eot? #iefix")
+    format("embedded-opentype");
+  src: url("https://cdn.skauting.cz/fonts/skaut-bold-webfont.woff")
+      format("woff"),
+    url("https://cdn.skauting.cz/fonts/skaut-bold-webfont.woff2")
+      format("woff2"),
+    url("https://cdn.skauting.cz/fonts/skaut-bold-webfont.otf")
+      format("opentype"),
+    url("https://cdn.skauting.cz/fonts/skaut-bold-webfont.svg#skautbold")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
